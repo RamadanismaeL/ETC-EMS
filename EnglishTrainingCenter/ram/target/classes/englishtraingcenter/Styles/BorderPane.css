@@ -1,0 +1,55 @@
+/**
+*@author Ramadan ismaeL
+*/
+
+.nav-center {
+    -fx-background-color: #ddd;
+}
+
+.window {
+    -fx-background-color: #fff;
+    -fx-background-radius: 8px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 6, 0, 0, 0);
+}
+
+.btn-primitivo {
+    -fx-pref-width: 170px;
+    -fx-font-size: 18px;
+}
+
+.pesquisa {
+    -fx-background-color: transparent;
+    -fx-background-radius: 5px;
+    -fx-border-color: linear-gradient(to bottom right, #28135c, #643887);
+    -fx-border-radius: 5px;
+    -fx-border-width: 1px;
+    -fx-padding: 0px 0px 0px 25px;
+    -fx-pref-width: 250px;
+    -fx-pref-height: 30px;
+    -fx-font-family: "Arial";
+    -fx-font-size: 14px;
+}
+
+.pesquisa:focused {
+    -fx-border-width: 2px;
+}
+
+.pdf {   
+    
+    -fx-pref-width: 62px;
+    -fx-font-size: 14px;
+}
+
+.btn-primitivo, .pdf, .print {
+    -fx-pref-height: 27pt;
+    -fx-font-family: "Agency FB"; 
+    -fx-background-color: transparent;
+    -fx-border-color: linear-gradient(to bottom right, #28135c, #643887);
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-cursor: hand;
+}
+
+.btn-primitivo:hover, .pdf:hover, .print:hover {
+    -fx-background-color: linear-gradient(to bottom right, #643887, #9e5bd4, #ddd);
+}

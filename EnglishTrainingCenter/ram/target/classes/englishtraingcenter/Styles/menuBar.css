@@ -1,0 +1,39 @@
+/**
+*@author Ramadan ismaeL
+*/
+
+.line {
+    -fx-stroke: #585858;
+    -fx-stroke-width: 1px;
+}
+
+.nav-top {
+    -fx-background-color: linear-gradient(to bottom right, #28135c, #643887);
+    -fx-alignment: center-left;
+}
+
+Text {
+    -fx-font-family: "Agency FB";
+    -fx-font-size: 18px;
+    -fx-fill: #ddd;
+}
+
+.close, .minimize {
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+}
+
+.close:hover {
+    -fx-background-color: #ff3547;
+}
+
+.minimize:hover {
+    -fx-background-color: #522a74;
+}
+
+.nav-bottom {
+    -fx-background-color: linear-gradient(to bottom right, #28135c, #643887);
+    -fx-alignment: center-left;
+    -fx-font-family: "Agency FB";
+    -fx-font-size: 14px;
+}

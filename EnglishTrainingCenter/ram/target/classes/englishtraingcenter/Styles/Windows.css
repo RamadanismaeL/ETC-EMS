@@ -1,0 +1,42 @@
+/**
+*@author Ramadan ismaeL
+*/
+
+FontAwesomeIconView {
+    -fx-fill: linear-gradient(to bottom right,#ddd, rgb(248, 201, 100), #8c00ff, #8c00ff, #28135c);
+}
+
+.table-view {
+    -fx-background-color: transparent;
+    -fx-border-color: linear-gradient(to bottom right, #644e03, rgb(255, 185, 35), #8c00ff, #8c00ff, #8d7905, #28135c);
+    -fx-border-radius: 8px 8px 0px 0px;
+    -fx-padding: 0px;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: linear-gradient(to bottom right, #2e0a4e, #4d098b, #525319);
+    -fx-background-insets:  0 0 0 0;
+    -fx-background-radius: 8px 8px 0px 0px;
+}
+
+.table-view .column-header, .filter {
+    -fx-background-color: transparent;
+    -fx-size: 40px;    
+}
+
+.table-view .table-column {
+    -fx-alignment: center;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #fff;
+    -fx-font-family: "Agency FB";
+    -fx-font-size: 14pt;
+}
+
+.title {
+    -fx-font-family: "Agency FB";
+    -fx-font-size: 25pt;
+    -fx-font-weight: bold;
+    -fx-fill: linear-gradient(to bottom right, rgb(32, 32, 32), #585858, #949494);
+}

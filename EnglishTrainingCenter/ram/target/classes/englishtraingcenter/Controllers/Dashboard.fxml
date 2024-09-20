@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckMenuItem?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane stylesheets="@../Styles/BorderPane.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="englishtraingcenter.Controllers.DashboardController">
+   <children>
+      <BorderPane fx:id="form_main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1300.0">
+         <left>
+            <AnchorPane prefHeight="711.0" prefWidth="215.0" styleClass="nav-center" stylesheets="@../Styles/leftContainer.css" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane prefHeight="711.0" prefWidth="215.0" styleClass="container-left" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Text layoutX="8.0" layoutY="23.9384765625" strokeType="OUTSIDE" strokeWidth="0.0" text="Usuário:" AnchorPane.leftAnchor="7.5" AnchorPane.rightAnchor="49.0" />
+                        <Label layoutX="8.0" layoutY="29.0" styleClass="username" text="Ramadan Ibraimo IsmaeL" AnchorPane.leftAnchor="7.5" AnchorPane.rightAnchor="7.5" />
+                        <Line endX="100.0" layoutX="107.5" layoutY="53.5" startX="-100.0" stroke="#dddddd" />
+                        <ImageView fx:id="marca" fitHeight="300.0" fitWidth="200.0" layoutX="8.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="7.5" AnchorPane.rightAnchor="7.5">
+                           <image>
+                              <Image url="@../Images/marca.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="btn_home" graphicTextGap="12.0" layoutX="8.0" layoutY="265.0" mnemonicParsing="false" styleClass="btn" text="Home" AnchorPane.leftAnchor="7.5" AnchorPane.rightAnchor="7.5">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="HOME" size="2em" />
+                           </graphic>
+                        </Button>
+                        <Button graphicTextGap="10.0" layoutX="8.0" layoutY="305.0" mnemonicParsing="false" styleClass="btn" text="Inscrições" AnchorPane.leftAnchor="7.5" AnchorPane.rightAnchor="7.5">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="LIST" size="2em" />
+                           </graphic>
+                        </Button>
+                        <Button graphicTextGap="9.0" layoutX="8.0" layoutY="345.0" mnemonicParsing="false" styleClass="btn" text="Pagamentos" AnchorPane.leftAnchor="7.5" AnchorPane.rightAnchor="7.5">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="MONEY" size="2em" />
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btn_estudante" graphicTextGap="9.0" layoutX="8.0" layoutY="385.0" mnemonicParsing="false" styleClass="btn" text="Estudantes" AnchorPane.leftAnchor="7.5" AnchorPane.rightAnchor="7.5">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="USERS" size="2em" />
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btn_formador" graphicTextGap="9.0" layoutX="8.0" layoutY="425.0" mnemonicParsing="false" styleClass="btn" text="Formadores" AnchorPane.leftAnchor="7.5" AnchorPane.rightAnchor="7.5">
+                           <graphic>
+                              <FontAwesomeIconView fill="#637597" glyphName="USERS" size="2em" />
+                           </graphic>
+                        </Button>
+                        <Button fx:id="logout" layoutX="8.0" layoutY="675.0" mnemonicParsing="false" styleClass="btn-logout" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="7.5">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="SIGN_OUT" size="2em" />
+                           </graphic>
+                        </Button>
+                        <Label layoutX="55.0" layoutY="665.0" text="Desconectar" textFill="#dddddd">
+                           <font>
+                              <Font name="Agency FB" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </left>
+         <top>
+            <VBox prefHeight="49.0" prefWidth="1300.0" styleClass="nav-center" stylesheets="@../Styles/menuBar.css" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0" styleClass="nav-top">
+                     <children>
+                        <ImageView fitHeight="23.0" fitWidth="25.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../Images/marca.png" />
+                           </image>
+                        </ImageView>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="English Training Center" wrappingWidth="209.13671875" />
+                        <AnchorPane prefHeight="23.0" prefWidth="1067.0">
+                           <children>
+                              <Button fx:id="close" mnemonicParsing="false" prefWidth="55.0" styleClass="close" AnchorPane.bottomAnchor="1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="1.0">
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="CLOSE" size="1.2em" />
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="minimize" mnemonicParsing="false" prefWidth="40.0" styleClass="minimize" AnchorPane.bottomAnchor="1.0" AnchorPane.rightAnchor="56.0" AnchorPane.topAnchor="1.0">
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="MINUS" size="1.2em" />
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+                  <Line endX="1157.2928466796875" startX="-142.0" stroke="#585858" styleClass="line" />
+                  <MenuBar styleClass="nav-bottom">
+                    <menus>
+                      <Menu mnemonicParsing="false" text="Relatório">
+                           <graphic>
+                              <FontAwesomeIconView fill="#525968" glyphName="SLIDERS" />
+                           </graphic>
+                      </Menu>
+                      <Menu mnemonicParsing="false" text="Feramentas">
+                        <items>
+                          <MenuItem mnemonicParsing="false" text="Opções" />
+                        </items>
+                           <graphic>
+                              <FontAwesomeIconView fill="#525968" glyphName="WRENCH" />
+                           </graphic>
+                      </Menu>
+                      <Menu mnemonicParsing="false" text="Configurações">
+                        <items>
+                              <Menu mnemonicParsing="false" text="Idiomas">
+                                <items>
+                                    <CheckMenuItem mnemonicParsing="false" text="Inglês" />
+                                    <CheckMenuItem mnemonicParsing="false" text="Português" />
+                                </items>
+                              </Menu>
+                              <MenuItem fx:id="menuItem_funcionario" mnemonicParsing="false" text="Funcionários" />
+                          <MenuItem fx:id="menuItem_usuario" mnemonicParsing="false" text="Usuários" />
+                              <MenuItem mnemonicParsing="false" text="Reiniciar" />
+                        </items>
+                           <graphic>
+                              <FontAwesomeIconView fill="#525968" glyphName="GEARS" />
+                           </graphic>
+                      </Menu>
+                        <Menu mnemonicParsing="false" text="Ajuda">
+                          <items>
+                            <MenuItem mnemonicParsing="false" text="Informações/Supoerte" />
+                              <MenuItem mnemonicParsing="false" text="Sobre" />
+                          </items>
+                           <graphic>
+                              <FontAwesomeIconView fill="#525968" glyphName="SEARCH" />
+                           </graphic>
+                        </Menu>
+                    </menus>
+                  </MenuBar>
+               </children>
+            </VBox>
+         </top>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="nav-center" BorderPane.alignment="CENTER">
+               <children>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" styleClass="window" stylesheets="@../Styles/Windows.css" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                     <children>
+                        <AnchorPane fx:id="form_funcionarios" prefHeight="200.0" prefWidth="200.0" visible="false">
+                           <children>
+                              <TableView layoutX="8.0" layoutY="106.0" prefHeight="557.0" prefWidth="1044.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="106.0">
+                                <columns>
+                                  <TableColumn prefWidth="75.0" text="Ord." />
+                                  <TableColumn prefWidth="149.0" text="NOME COMPLETO" />
+                                    <TableColumn prefWidth="65.0" text="SEXO" />
+                                    <TableColumn prefWidth="82.0" text="IDADE" />
+                                    <TableColumn prefWidth="164.0" text="ENDEREÇO" />
+                                    <TableColumn prefWidth="95.0" text="TELEFONE" />
+                                    <TableColumn text="HORÁRIO" />
+                                    <TableColumn prefWidth="113.0" text="CARGO" />
+                                    <TableColumn prefWidth="77.0" text="ESTADO" />
+                                    <TableColumn prefWidth="143.0" text="DATA DE REGISTRO" />
+                                </columns>
+                              </TableView>
+                              <TextField layoutX="10.0" layoutY="70.0" prefHeight="25.0" prefWidth="288.0" promptText="Pesquisar" styleClass="pesquisa" AnchorPane.leftAnchor="10.0" />
+                              <Button layoutX="331.0" layoutY="68.0" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" styleClass="print" AnchorPane.topAnchor="68.0">
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="PRINT" size="1.8em" />
+                                 </graphic>
+                              </Button>
+                              <Button layoutX="371.0" layoutY="68.0" minWidth="-Infinity" mnemonicParsing="false" styleClass="btn-primitivo" text="Detalhes" AnchorPane.rightAnchor="523.0" AnchorPane.topAnchor="68.0">
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="LIST" size="1.8em" />
+                                 </graphic>
+                              </Button>
+                              <Button layoutX="542.0" layoutY="68.0" minWidth="-Infinity" mnemonicParsing="false" styleClass="btn-primitivo" text="Adicionar" AnchorPane.rightAnchor="352.0" AnchorPane.topAnchor="68.0">
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="PLUS" size="1.8em" />
+                                 </graphic>
+                              </Button>
+                              <Button layoutX="713.0" layoutY="68.0" minWidth="-Infinity" mnemonicParsing="false" styleClass="btn-primitivo" text="Editar" AnchorPane.rightAnchor="181.0" AnchorPane.topAnchor="68.0">
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="EDIT" size="1.8em" />
+                                 </graphic>
+                              </Button>
+                              <Button layoutX="884.0" layoutY="68.0" minWidth="-Infinity" mnemonicParsing="false" styleClass="btn-primitivo" text="Remover" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="68.0">
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="TRASH" size="1.8em" />
+                                 </graphic>
+                              </Button>
+                              <Button layoutX="268.0" layoutY="68.0" minWidth="-Infinity" mnemonicParsing="false" styleClass="pdf" text="pdf" AnchorPane.topAnchor="68.0">
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="FILE" size="1.8em" />
+                                 </graphic>
+                              </Button>
+                              <FontAwesomeIconView fill="#525968" glyphName="SEARCH" layoutX="16.0" layoutY="90.0" size="1.5em" />
+                              <Text layoutX="25.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="FUNCIONÁRIOS" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
+                              <Line endX="750.0" layoutX="281.0" layoutY="29.0" startX="-121.0" AnchorPane.rightAnchor="10.0" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="form_formadores" prefHeight="200.0" prefWidth="200.0" visible="false">
+                           <children>
+                              <TableView layoutX="8.0" layoutY="50.0" prefHeight="613.0" prefWidth="1044.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="50.0">
+                                 <columns>
+                                    <TableColumn prefWidth="75.0" text="Ord." />
+                                    <TableColumn prefWidth="149.0" text="NOME COMPLETO" />
+                                    <TableColumn prefWidth="65.0" text="SEXO" />
+                                    <TableColumn prefWidth="82.0" text="IDADE" />
+                                    <TableColumn prefWidth="164.0" text="ENDEREÇO" />
+                                    <TableColumn prefWidth="95.0" text="TELEFONE" />
+                                    <TableColumn text="HORÁRIO" />
+                                    <TableColumn prefWidth="104.0" text="MODALIDADE" />
+                                    <TableColumn prefWidth="86.0" text="ESTADO" />
+                                    <TableColumn prefWidth="143.0" text="DATA DE REGISTRO" />
+                                 </columns>
+                              </TableView>
+                              <TextField layoutX="10.0" layoutY="13.0" prefHeight="25.0" prefWidth="288.0" promptText="Pesquisar" styleClass="pesquisa" AnchorPane.leftAnchor="10.0" />
+                              <Button layoutX="331.0" layoutY="10.0" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" styleClass="print" AnchorPane.topAnchor="10.0">
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="PRINT" size="1.8em" />
+                                 </graphic>
+                              </Button>
+                              <Button layoutX="499.0" layoutY="48.0" minWidth="-Infinity" mnemonicParsing="false" styleClass="btn-primitivo" text="Detalhes" AnchorPane.rightAnchor="523.0" AnchorPane.topAnchor="10.0">
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="LIST" size="1.8em" />
+                                 </graphic>
+                              </Button>
+                              <Button layoutX="571.0" layoutY="10.0" minWidth="-Infinity" mnemonicParsing="false" styleClass="btn-primitivo" text="Adicionar" AnchorPane.rightAnchor="352.0" AnchorPane.topAnchor="10.0">
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="PLUS" size="1.8em" />
+                                 </graphic>
+                              </Button>
+                              <Button layoutX="661.0" layoutY="10.0" minWidth="-Infinity" mnemonicParsing="false" styleClass="btn-primitivo" text="Editar" AnchorPane.rightAnchor="181.0" AnchorPane.topAnchor="10.0">
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="EDIT" size="1.8em" />
+                                 </graphic>
+                              </Button>
+                              <Button layoutX="708.0" layoutY="10.0" minWidth="-Infinity" mnemonicParsing="false" styleClass="btn-primitivo" text="Remover" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="TRASH" size="1.8em" />
+                                 </graphic>
+                              </Button>
+                              <Button layoutX="268.0" layoutY="10.0" minWidth="-Infinity" mnemonicParsing="false" styleClass="pdf" text="pdf" AnchorPane.topAnchor="10.0">
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="FILE" size="1.8em" />
+                                 </graphic>
+                              </Button>
+                              <FontAwesomeIconView fill="#525968" glyphName="SEARCH" layoutX="16.0" layoutY="33.0" size="1.5em" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="form_usuarios" prefHeight="200.0" prefWidth="200.0" visible="false">
+                           <children>
+                              <TableView layoutX="8.0" layoutY="106.0" prefHeight="557.0" prefWidth="1044.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="106.0">
+                                 <columns>
+                                    <TableColumn prefWidth="75.0" text="Ord." />
+                                    <TableColumn prefWidth="149.0" text="NOME COMPLETO" />
+                                    <TableColumn prefWidth="65.0" text="SEXO" />
+                                    <TableColumn prefWidth="82.0" text="IDADE" />
+                                    <TableColumn prefWidth="164.0" text="ENDEREÇO" />
+                                    <TableColumn prefWidth="95.0" text="TELEFONE" />
+                                    <TableColumn text="HORÁRIO" />
+                                    <TableColumn prefWidth="113.0" text="CARGO" />
+                                    <TableColumn prefWidth="77.0" text="ESTADO" />
+                                    <TableColumn prefWidth="143.0" text="DATA DE REGISTRO" />
+                                 </columns>
+                              </TableView>
+                              <TextField layoutX="10.0" layoutY="70.0" prefHeight="25.0" prefWidth="288.0" promptText="Pesquisar" styleClass="pesquisa" AnchorPane.leftAnchor="10.0" />
+                              <Button layoutX="331.0" layoutY="68.0" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" styleClass="print" AnchorPane.topAnchor="68.0">
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="PRINT" size="1.8em" />
+                                 </graphic>
+                              </Button>
+                              <Button layoutX="371.0" layoutY="68.0" minWidth="-Infinity" mnemonicParsing="false" styleClass="btn-primitivo" text=".Logs" AnchorPane.rightAnchor="523.0" AnchorPane.topAnchor="68.0">
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="LIST" size="1.8em" />
+                                 </graphic>
+                              </Button>
+                              <Button layoutX="542.0" layoutY="68.0" minWidth="-Infinity" mnemonicParsing="false" styleClass="btn-primitivo" text="Adicionar" AnchorPane.rightAnchor="352.0" AnchorPane.topAnchor="68.0">
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="PLUS" size="1.8em" />
+                                 </graphic>
+                              </Button>
+                              <Button layoutX="713.0" layoutY="68.0" minWidth="-Infinity" mnemonicParsing="false" styleClass="btn-primitivo" text="Editar" AnchorPane.rightAnchor="181.0" AnchorPane.topAnchor="68.0">
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="EDIT" size="1.8em" />
+                                 </graphic>
+                              </Button>
+                              <Button layoutX="884.0" layoutY="68.0" minWidth="-Infinity" mnemonicParsing="false" styleClass="btn-primitivo" text="Remover" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="68.0">
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="TRASH" size="1.8em" />
+                                 </graphic>
+                              </Button>
+                              <Button layoutX="268.0" layoutY="68.0" minWidth="-Infinity" mnemonicParsing="false" styleClass="pdf" text="pdf" AnchorPane.topAnchor="68.0">
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="FILE" size="1.8em" />
+                                 </graphic>
+                              </Button>
+                              <FontAwesomeIconView fill="#525968" glyphName="SEARCH" layoutX="16.0" layoutY="90.0" size="1.5em" />
+                              <Text layoutX="25.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="USUÁRIOS" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
+                              <Line endX="750.0" layoutX="281.0" layoutY="29.0" startX="-175.0" AnchorPane.rightAnchor="10.0" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="form_estudantes" prefHeight="200.0" prefWidth="200.0" stylesheets="@../Styles/Students.css" visible="false">
+                           <children>
+                              <TableView layoutX="8.0" layoutY="119.0" prefHeight="544.0" prefWidth="1044.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="119.0">
+                                 <columns>
+                                    <TableColumn prefWidth="324.0" text="NOME COMPLETO" />
+                                    <TableColumn prefWidth="59.0" text="SEXO" />
+                                    <TableColumn prefWidth="52.0" text="IDADE" />
+                                    <TableColumn prefWidth="136.0" text="TELEFONE" />
+                                    <TableColumn prefWidth="73.0" text="NÍVEL" />
+                                    <TableColumn prefWidth="70.0" text="HORÁRIO" />
+                                    <TableColumn prefWidth="97.0" text="MODALIDADE" />
+                                    <TableColumn prefWidth="88.0" text="ESTADO" />
+                                    <TableColumn prefWidth="144.0" text="DATA DE REGISTRO" />
+                                 </columns>
+                              </TableView>
+                              <TextField layoutX="10.0" layoutY="88.0" prefHeight="25.0" prefWidth="288.0" promptText="Pesquisar" styleClass="pesquisa" AnchorPane.leftAnchor="10.0" />
+                              <Button layoutX="120.0" layoutY="10.0" minWidth="-Infinity" mnemonicParsing="false" styleClass="btn-students" text="Exames" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="EDIT" size="1.8em" />
+                                 </graphic>
+                              </Button>
+                              <Button layoutX="532.0" layoutY="10.0" minWidth="-Infinity" mnemonicParsing="false" styleClass="btn-students" text="Inscritos" AnchorPane.rightAnchor="272.0" AnchorPane.topAnchor="10.0">
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="USERS" size="1.8em" />
+                                 </graphic>
+                              </Button>
+                              <Button layoutX="270.0" layoutY="28.0" minWidth="-Infinity" mnemonicParsing="false" styleClass="btn-students" text="Detalhes" AnchorPane.rightAnchor="533.0" AnchorPane.topAnchor="10.0">
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="LIST" size="1.8em" />
+                                 </graphic>
+                              </Button>
+                              <Button layoutX="793.0" layoutY="10.0" minWidth="-Infinity" mnemonicParsing="false" styleClass="btn-students" text="Mensalidades" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="10.0">
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="MONEY" size="1.8em" />
+                                 </graphic>
+                              </Button>
+                              <FontAwesomeIconView fill="#525968" glyphName="SEARCH" layoutX="16.0" layoutY="108.0" size="1.5em" />
+                              <Line endX="930.0" layoutX="118.0" layoutY="49.0" startX="-100.0" stroke="#bfbbbb" strokeWidth="0.7" />
+                              <Text layoutX="13.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lista de Estudantes:" AnchorPane.topAnchor="55.0" />
+                              <RadioButton layoutX="154.0" layoutY="56.0" mnemonicParsing="false" AnchorPane.topAnchor="56.0">
+                                 <graphic>
+                                    <Label graphicTextGap="10.0" text="  Arquivados" />
+                                 </graphic>
+                              </RadioButton>
+                              <RadioButton layoutX="271.0" layoutY="66.0" mnemonicParsing="false" AnchorPane.topAnchor="56.0">
+                                 <graphic>
+                                    <Label text="  Ativos" />
+                                 </graphic>
+                              </RadioButton>
+                              <RadioButton layoutX="358.0" layoutY="56.0" mnemonicParsing="false" AnchorPane.topAnchor="56.0">
+                                 <graphic>
+                                    <Label text="  Pendentes" />
+                                 </graphic>
+                              </RadioButton>
+                              <Line endY="40.0" layoutX="792.0" layoutY="72.0" startY="-20.0" stroke="#bfbbbb" />
+                              <Text layoutX="803.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Estudante(s) Ativo(s)" AnchorPane.topAnchor="55.0" />
+                              <Text layoutX="803.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Estudante(s) Pendente(s)" />
+                              <Text layoutX="976.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":" />
+                              <Text layoutX="977.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":" />
+                              <Text fill="#055fc6" layoutX="991.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="9999999" AnchorPane.rightAnchor="10.0" />
+                              <Text fill="#e80202" layoutX="991.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="9999999" AnchorPane.rightAnchor="10.0" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="form_home" prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <Text layoutX="426.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="hh:mm:ss:mls">
+                                 <font>
+                                    <Font size="36.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="368.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DD de MM de AAAA">
+                                 <font>
+                                    <Font size="36.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="14.0" layoutY="645.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Endereço.:.................">
+                                 <font>
+                                    <Font size="36.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="223.0" layoutY="338.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Os botões disponíveis e em funcionamento são: Home, Estudante, Formador, Funcionário, Desconectar, Usuário, Minimizar e Sair." wrappingWidth="740.8125">
+                                 <font>
+                                    <Font name="System Bold" size="36.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="RED" layoutX="815.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Em Desenvolvimento......" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </StackPane>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</StackPane>

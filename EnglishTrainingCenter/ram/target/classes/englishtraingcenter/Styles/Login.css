@@ -1,0 +1,72 @@
+/**
+*@author Ramadan ismaeL
+*/
+
+.pane-root {
+    -fx-background-color: #222;
+    -fx-effect: dropshadow(gaussian, rgb(100, 56, 135), 15, 0.5, 0, 0);
+}
+
+.background-pane {
+    -fx-background-color: linear-gradient(to bottom right, #ddd 50%, #643887 50%, #200C53);
+}
+
+.login-title {
+    -fx-font-size: 29px;
+    -fx-text-fill: #F3AD0F;
+    -fx-font-family: "Agency FB";
+    -fx-font-weight: bold;
+}
+
+.input-field {
+    -fx-pref-width: 250px;
+    -fx-pref-height: 30px;
+    -fx-background-color: linear-gradient(to bottom, #efefef, #eee);
+    -fx-background-radius: 5px;
+    -fx-border-color: #000;
+    -fx-border-width: .4px;
+    -fx-border-radius: 5px;
+    -fx-font-size: 14px;
+    -fx-font-family: "Arial";
+    -fx-padding: 0px 0px 0px 27px;
+}
+
+.input-field:focused {
+    -fx-border-width: 1;
+    -fx-background-color: #efefef;
+    -fx-background-radius: 5px;
+    -fx-border-color: linear-gradient(to bottom left, #643887, #200C53);
+}
+
+.login-button {
+    -fx-background-color: #643887;
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+    -fx-font-family: "Agency FB";
+    -fx-background-radius: 15;
+    -fx-pref-width: 120px;
+    -fx-pref-height: 35px;
+    -fx-cursor: hand;
+}
+
+.login-button:hover {
+    -fx-background-color: linear-gradient(to bottom left, #643887, #200C53);
+}
+
+.welcome-back-text {
+    -fx-font-size: 25px;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-font-family: "Agency FB";
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 0), 10, 0.5, 0, 0);
+}
+
+.close {
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+ }
+
+ .close:hover {
+    -fx-background-color: #ff3547;
+    -fx-fill: white;
+ }
